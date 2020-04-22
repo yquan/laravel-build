@@ -30,6 +30,7 @@ RUN set -eux; \
     composer \
     nodejs \
     yarn \
+    rsync \
   ;
 
 COPY dist/etc/apt/sources.list /etc/apt/sources.list
