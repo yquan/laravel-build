@@ -21,4 +21,5 @@ RUN set -eux; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
     php7.4 \
+    composer \
   ;
