@@ -4,6 +4,8 @@ RUN set -eux; \
   export DEBIAN_FRONTEND=noninteractive; \
   ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
   apt remove cmdtest; \
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list; \
+  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 23E7166788B63E1E; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
     ca-certificates \
