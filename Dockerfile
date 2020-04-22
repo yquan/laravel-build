@@ -7,8 +7,10 @@ RUN set -eux; \
   apt-get install -y --no-install-recommends \
     ca-certificates \
     gnupg2 \
+    curl \
   ; \
   apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 7EA0A9C3F273FCD8; \
+  curl -sL https://deb.nodesource.com/setup_12.x | bash -; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
     ca-certificates \
@@ -20,6 +22,8 @@ RUN set -eux; \
   apt-get install -y --no-install-recommends \
     php7.4 \
     composer \
+    nodejs \
+    yarn \
   ;
 
 COPY dist/etc/apt/sources.list /etc/apt/sources.list
