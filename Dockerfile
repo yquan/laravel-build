@@ -23,6 +23,7 @@ RUN set -eux; \
     php7.4 \
     php7.4-mbstring \
     php7.4-xml \
+    php7.4-zip \
     composer \
     nodejs \
     yarn \
