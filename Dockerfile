@@ -3,6 +3,7 @@ FROM ubuntu:18.04
 RUN set -eux; \
   export DEBIAN_FRONTEND=noninteractive; \
   ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
+  apt remove cmdtest; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
     ca-certificates \
