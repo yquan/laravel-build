@@ -21,6 +21,8 @@ RUN set -eux; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
     php7.4 \
+    php7.4-mbstring \
+    php7.4-xml \
     composer \
     nodejs \
     yarn \
