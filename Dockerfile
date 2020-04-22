@@ -31,6 +31,7 @@ RUN set -eux; \
     nodejs \
     yarn \
     rsync \
+    openssh-client \
   ;
 
 COPY dist/etc/apt/sources.list /etc/apt/sources.list
