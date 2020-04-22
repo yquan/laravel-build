@@ -26,7 +26,7 @@ RUN set -eux; \
     php7.4-mbstring \
     php7.4-xml \
     php7.4-zip \
-    php-xdebug
+    php-xdebug \
     composer \
     nodejs \
     yarn \
