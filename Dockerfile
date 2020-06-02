@@ -29,6 +29,7 @@ RUN set -eux; \
     php7.4-curl \
     php7.4-soap \
     php7.4-zip \
+    php7.4-sqlite \
     php-xdebug \
     composer \
     nodejs \
