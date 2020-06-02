@@ -27,6 +27,7 @@ RUN set -eux; \
     php7.4-xml \
     php7.4-gd \
     php7.4-curl \
+    php7.4-soap \
     php7.4-zip \
     php-xdebug \
     composer \
